@@ -38,6 +38,6 @@ public class PlayerMovement : MonoBehaviour
         //create a float out of the movement the character controller undergoes
         float speed = characterController.velocity.magnitude;
         //check to see if the player is moving and 
-        //animator.SetFloat("movementSpeed", speed);
+        animator.SetFloat("movementSpeed", speed);
     }
 }

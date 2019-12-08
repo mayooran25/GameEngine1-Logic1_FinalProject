@@ -23,7 +23,7 @@ public class CameraMovement : MonoBehaviour
         character.transform.localRotation = Quaternion.AngleAxis(mouseLook.x, character.transform.up);
 
         mouseLook.y = Mathf.Clamp(mouseLook.y, -25, -25); //up and down
-       mouseLook.x = Mathf.Clamp(mouseLook.x, -360, 360); //left and right
+       //mouseLook.x = Mathf.Clamp(mouseLook.x, -360, 360); //left and right
 
 
     }

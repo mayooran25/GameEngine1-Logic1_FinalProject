@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Item : MonoBehaviour
+public class item : MonoBehaviour
 {
     public Image itemIcon;
     public Text itemNameText;

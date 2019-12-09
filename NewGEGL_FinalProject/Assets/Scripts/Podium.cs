@@ -9,17 +9,20 @@ public class Podium : MonoBehaviour
     public Transform podiumPosition;
     public Dictionary<BodyPart, List<ItemSO>> items;
     public List<ItemSO> allList;
+    
     private UIController _uiScript;
-
+    private CameraManager _cameraManager;
+    
     public delegate void OnIntract();
     public delegate void OnExit();
-    public static event OnIntract OnIntractEvent;
-    public static event OnExit OnExitEvent;
+    public OnIntract onIntractEvent;
+    public OnExit onExitEvent;
     
     private void Awake()
     {
         InitializeDictonary();
         _uiScript = GetComponentInChildren<UIController>();
+        _cameraManager = GetComponent<CameraManager>();
     }
 
     void InitializeDictonary()
@@ -39,9 +42,9 @@ public class Podium : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        foreach (var bodyPart in items)
+        foreach (var item in items)
         {
-            //make panels
+            _uiScript.CreatePanelItem(item.Key, item.Value);
         }
     }
 }

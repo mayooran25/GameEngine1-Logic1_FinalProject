@@ -11,11 +11,14 @@ public class Podium : MonoBehaviour
     public List<ItemSO> allList;
     private UIController _uiScript;
 
+    public delegate void OnIntract();
+    public delegate void OnExit();
+    public static event OnIntract OnIntractEvent;
+    public static event OnExit OnExitEvent;
+    
     private void Awake()
     {
         InitializeDictonary();
-
-
         _uiScript = GetComponentInChildren<UIController>();
     }
 

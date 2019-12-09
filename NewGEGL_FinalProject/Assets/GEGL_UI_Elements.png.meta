@@ -26,6 +26,12 @@ TextureImporter:
   - first:
       213: 2517540805285238333
     second: GEGL_UI_Elements_7
+  - first:
+      213: -7178722364304707854
+    second: GEGL_UI_Elements_8
+  - first:
+      213: 1383845930770752738
+    second: GEGL_UI_Elements_9
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -114,9 +120,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 28
-        y: 495
+        y: 535
         width: 1260
-        height: 1464
+        height: 1466
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,7 +130,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b360227368c874d428965d96866e440a
+      spriteID: 10f41064f1da2d84f85d78baad256b37
       internalID: -5947105977560417012
       vertices: []
       indices: 
@@ -134,10 +140,10 @@ TextureImporter:
       name: GEGL_UI_Elements_1
       rect:
         serializedVersion: 2
-        x: 2040
-        y: 1609
-        width: 1301
-        height: 565
+        x: 1811
+        y: 1335
+        width: 1946
+        height: 602
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,7 +151,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 546a949fdaf695b41b7c480f249f2fb7
+      spriteID: 59a0cca75d337ef44bad52df57724fc4
       internalID: 4257854077086712258
       vertices: []
       indices: 
@@ -155,10 +161,10 @@ TextureImporter:
       name: GEGL_UI_Elements_2
       rect:
         serializedVersion: 2
-        x: 1791
-        y: 917
-        width: 1944
-        height: 602
+        x: 1517
+        y: 743
+        width: 1168
+        height: 362
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,7 +172,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10d9b9e9447698b4fbcc98cb70124d95
+      spriteID: 83e6c8c08709d6a4493219e34f4cea69
       internalID: 2495215984639724151
       vertices: []
       indices: 
@@ -176,9 +182,9 @@ TextureImporter:
       name: GEGL_UI_Elements_3
       rect:
         serializedVersion: 2
-        x: 1612
-        y: 505
-        width: 1169
+        x: 2773
+        y: 737
+        width: 1168
         height: 362
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -187,7 +193,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcd778d0fd8345e4da770b26fa9deb0c
+      spriteID: fe544d210ad2fb04681dae8c89660b13
       internalID: -6309039659328350611
       vertices: []
       indices: 
@@ -197,10 +203,10 @@ TextureImporter:
       name: GEGL_UI_Elements_4
       rect:
         serializedVersion: 2
-        x: 2869
-        y: 497
-        width: 1170
-        height: 362
+        x: 3504
+        y: 1087
+        width: 13
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,7 +214,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67f5d22049132f845b236c3eda0b9699
+      spriteID: 22c7f5a00c8c11e4e81123b6f289e8d4
       internalID: -2618232270842205778
       vertices: []
       indices: 
@@ -218,10 +224,10 @@ TextureImporter:
       name: GEGL_UI_Elements_5
       rect:
         serializedVersion: 2
-        x: 505
-        y: 5
-        width: 320
-        height: 356
+        x: 507
+        y: 47
+        width: 318
+        height: 354
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,7 +235,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4245e787e0d5d83418f555e2380af2a5
+      spriteID: ecbf6cd4a8fc7c845a44edee3c31f1ca
       internalID: -2774882697028731359
       vertices: []
       indices: 
@@ -239,29 +245,8 @@ TextureImporter:
       name: GEGL_UI_Elements_6
       rect:
         serializedVersion: 2
-        x: 1595
-        y: 0
-        width: 1170
-        height: 361
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be5f87e5fee5f4b42a3940e54e338dde
-      internalID: -1841449301709699372
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GEGL_UI_Elements_7
-      rect:
-        serializedVersion: 2
-        x: 2863
-        y: 11
+        x: 1499
+        y: 237
         width: 1170
         height: 362
       alignment: 0
@@ -271,8 +256,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac204398ef9ce7643afef5b5ff870a11
+      spriteID: b624439736847d64eba15f1c6a8e4551
+      internalID: -1841449301709699372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEGL_UI_Elements_7
+      rect:
+        serializedVersion: 2
+        x: 2801
+        y: 241
+        width: 1168
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9fb10c1a2991440ba5552aabf60d3c
       internalID: 2517540805285238333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEGL_UI_Elements_8
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 69
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feec9fdd9003abc459fc972a41209ef4
+      internalID: -7178722364304707854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEGL_UI_Elements_9
+      rect:
+        serializedVersion: 2
+        x: 3823
+        y: 73
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d400147330b2814e82cde450f395bcf
+      internalID: 1383845930770752738
       vertices: []
       indices: 
       edges: []
@@ -280,7 +328,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: dc9880f7670be3c478c484786493dca5
+    spriteID: 30a75d6f25b9c6e4cb5ef27c5f23a1a4
     internalID: 0
     vertices: []
     indices: 

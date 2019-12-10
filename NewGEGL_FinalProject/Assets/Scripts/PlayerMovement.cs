@@ -40,5 +40,21 @@ public class PlayerMovement : MonoBehaviour
         float speed = characterController.velocity.magnitude;
         //check to see if the player is moving and 
         animator.SetFloat("movementSpeed", speed);
+
+        //if the player presses the shift button while moving, change to running
+        if (Input.GetKeyDown(KeyCode.LeftShift) && movementSpeed >= 0.5)
+        {
+            animator.SetTrigger("run");
+            movementSpeed = 50f;
+        }
+
+        //if the player releases the shift button, move back to walking. 
+        if (Input.GetKeyUp(KeyCode.LeftShift) && movementSpeed >= 0.5)
+        {
+            animator.SetTrigger("walk");
+            movementSpeed = 18f;
+        }
+
+
     }
 }

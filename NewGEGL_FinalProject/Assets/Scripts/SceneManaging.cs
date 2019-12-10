@@ -17,4 +17,14 @@ public class SceneManaging : MonoBehaviour
         Application.Quit();
         Debug.Log("Game has quit");
     }
+
+    public void GamePaused()
+    {
+        Time.timeScale = 0;
+    }
+
+    public void GameResumed()
+    {
+        Time.timeScale = 1;
+    }
 }

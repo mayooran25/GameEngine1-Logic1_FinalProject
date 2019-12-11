@@ -55,8 +55,17 @@ public class Podium : MonoBehaviour
         {
             if (item.id == inId)
             {
-                player.GetComponent<PlayerClothes>().EnableItem(part, item.id);
+                player.EnableItem(part, item.id);
             }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            //Press intract key.
+            onIntractEvent.Invoke();
         }
     }
 }

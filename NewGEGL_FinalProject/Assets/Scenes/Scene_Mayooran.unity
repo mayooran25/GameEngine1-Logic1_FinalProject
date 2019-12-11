@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4374898, g: 0.48531306, b: 0.5655878, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6372,6 +6372,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6700539922287851307, guid: cb2a827a5f64c0d45a4200bcc6d8872a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8379199123021596716, guid: cb2a827a5f64c0d45a4200bcc6d8872a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 854038503436427746, guid: cb2a827a5f64c0d45a4200bcc6d8872a,
         type: 3}
       propertyPath: m_Name
@@ -6531,6 +6541,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -60.646004
+      objectReference: {fileID: 0}
+    - target: {fileID: 854038503436427749, guid: cb2a827a5f64c0d45a4200bcc6d8872a,
+        type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed by
+        Humanoid clips.\n\tTransform 'eyerid2_Left'\n\tTransform 'eyerid2_Right'\n\tTransform
+        'eyerid2_Left'\n\tTransform 'eyerid2_Right'\n\tTransform 'eyerid2_Left'\n\tTransform
+        'eyerid2_Right'\n\tFrom animation clip 'idle_10'\n\tFrom animation clip 'walk_00'\n\tFrom
+        animation clip 'sprint_00'\n\tFrom animation clip 'special_20_p'"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb2a827a5f64c0d45a4200bcc6d8872a, type: 3}
@@ -11175,75 +11195,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a754f373a9f1de54e8dbe9fe542e1786, type: 3}
---- !u!1001 &1809744464
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 551325275}
-    m_Modifications:
-    - target: {fileID: 4767536141057287444, guid: 03c2e6f65acd9df4ba2aa80d6480b916,
-        type: 3}
-      propertyPath: m_Name
-      value: sword_2 1 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4765237609319615496, guid: 03c2e6f65acd9df4ba2aa80d6480b916,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.13400334
-      objectReference: {fileID: 0}
-    - target: {fileID: 4765237609319615496, guid: 03c2e6f65acd9df4ba2aa80d6480b916,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.0005220974
-      objectReference: {fileID: 0}
-    - target: {fileID: 4765237609319615496, guid: 03c2e6f65acd9df4ba2aa80d6480b916,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.06711898
-      objectReference: {fileID: 0}
-    - target: {fileID: 4765237609319615496, guid: 03c2e6f65acd9df4ba2aa80d6480b916,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.29338223
-      objectReference: {fileID: 0}
-    - target: {fileID: 4765237609319615496, guid: 03c2e6f65acd9df4ba2aa80d6480b916,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.643373
-      objectReference: {fileID: 0}
-    - target: {fileID: 4765237609319615496, guid: 03c2e6f65acd9df4ba2aa80d6480b916,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.7046754
-      objectReference: {fileID: 0}
-    - target: {fileID: 4765237609319615496, guid: 03c2e6f65acd9df4ba2aa80d6480b916,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.058572147
-      objectReference: {fileID: 0}
-    - target: {fileID: 4765237609319615496, guid: 03c2e6f65acd9df4ba2aa80d6480b916,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4765237609319615496, guid: 03c2e6f65acd9df4ba2aa80d6480b916,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4765237609319615496, guid: 03c2e6f65acd9df4ba2aa80d6480b916,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4765237609319615496, guid: 03c2e6f65acd9df4ba2aa80d6480b916,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 109.76201
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 03c2e6f65acd9df4ba2aa80d6480b916, type: 3}
 --- !u!1001 &1811229853
 PrefabInstance:
   m_ObjectHideFlags: 0

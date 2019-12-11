@@ -89,6 +89,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8694218628169309062}
+  - component: {fileID: 563594551227504640}
   m_Layer: 0
   m_Name: Romanhelmet 1 1
   m_TagString: Untagged
@@ -111,3 +112,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 17.906, y: 270, z: 0}
+--- !u!114 &563594551227504640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5688970055166683541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee886262f19a1e845928eb64fd3abefa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 2

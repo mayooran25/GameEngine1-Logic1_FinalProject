@@ -20,8 +20,10 @@ public class UIController : MonoBehaviour
             {
                 //Instantiate((GetComponent<item>().itemIcon), HeadPanel);
                 //Instantiate((GetComponent<item>().itemNameText), HeadPanel);
-                GameObject go = Instantiate(menuItemPrefab, HeadPanel);
-                go.GetComponent<item>().Init(item);
+                item go = Instantiate(menuItemPrefab, HeadPanel).GetComponent<item>();
+                go.itemData = item;
+                go.podium = GetComponent<Podium>();
+                go.Init(item);
             }
 
            else
@@ -30,8 +32,10 @@ public class UIController : MonoBehaviour
             { 
                 //Instantiate((GetComponent<item>().itemIcon),FeetPanel);
                 //Instantiate((GetComponent<item>().itemNameText), FeetPanel);
-                GameObject go = Instantiate(menuItemPrefab, FeetPanel);
-                go.GetComponent<item>().Init(item);
+                item go = Instantiate(menuItemPrefab, FeetPanel).GetComponent<item>();
+                go.itemData = item;
+                go.podium = GetComponent<Podium>();
+                go.Init(item);
             }
 
            else
@@ -40,8 +44,10 @@ public class UIController : MonoBehaviour
             {
                 //Instantiate((GetComponent<item>().itemIcon), HandsPanel);
                 //Instantiate((GetComponent<item>().itemNameText),HandsPanel);
-                GameObject go = Instantiate(menuItemPrefab, ShieldPanel);
-                go.GetComponent<item>().Init(item);
+                item go = Instantiate(menuItemPrefab, ShieldPanel).GetComponent<item>();
+                go.itemData = item;
+                go.podium = GetComponent<Podium>();
+                go.Init(item);
             }
 
             else
@@ -50,20 +56,11 @@ public class UIController : MonoBehaviour
             {
                 //Instantiate((GetComponent<item>().itemIcon), BodyPanel);
                 //Instantiate((GetComponent<item>().itemNameText), BodyPanel);
-                GameObject go = Instantiate(menuItemPrefab, WeaponsPanel);
-                go.GetComponent<item>().Init(item);
+                item go = Instantiate(menuItemPrefab, WeaponsPanel).GetComponent<item>();
+                go.itemData = item;
+                go.podium = GetComponent<Podium>();
+                go.Init(item);
             }
-
-            
         }
     }
-
-
-
-
-
-
-
-
-
 }

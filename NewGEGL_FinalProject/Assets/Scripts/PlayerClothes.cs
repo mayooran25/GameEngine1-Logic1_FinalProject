@@ -18,12 +18,10 @@ public class PlayerClothes : MonoBehaviour
         else if (bodyPart == BodyPart.Head)
         {
             EquipSequence(heads, id);
-
         }
         else if (bodyPart == BodyPart.Weapons)
         {
             EquipSequence(weapons, id);
-
         }
         else if (bodyPart == BodyPart.Shield)
         {

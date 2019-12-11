@@ -58,6 +58,5 @@ public class Podium : MonoBehaviour
                 player.GetComponent<PlayerClothes>().EnableItem(part, item.id);
             }
         }
-        
     }
 }

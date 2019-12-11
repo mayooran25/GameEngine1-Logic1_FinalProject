@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3265b0916d144094aa9dc623900ef629, type: 3}
   m_Name: Dagger
   m_EditorClassIdentifier: 
-  itemIcon: {fileID: 0}
-  itemName: 
+  itemIcon: {fileID: 21300000, guid: 720d9747414bd0d4cb2b4a9566484e59, type: 3}
+  itemName: Dagger
   itemPrefab: []
-  position: {x: 0, y: 0, z: 0}
-  rotation: {x: 0, y: 0, z: 0}
+  position: {x: -362.4, y: 7.6, z: 8.38}
+  rotation: {x: 0, y: 0, z: -108.434}
   BodyPart: 2

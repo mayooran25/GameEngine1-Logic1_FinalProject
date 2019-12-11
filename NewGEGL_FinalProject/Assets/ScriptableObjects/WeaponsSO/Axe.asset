@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3265b0916d144094aa9dc623900ef629, type: 3}
   m_Name: Axe
   m_EditorClassIdentifier: 
-  itemIcon: {fileID: 0}
-  itemName: 
+  itemIcon: {fileID: 21300000, guid: 70670e80f80d1964983bb5363a775f54, type: 3}
+  itemName: Axe
   itemPrefab: []
-  position: {x: 0, y: 0, z: 0}
-  rotation: {x: 0, y: 0, z: 0}
+  position: {x: -357.64, y: -0.02, z: 10.33729}
+  rotation: {x: 0, y: 0, z: 87.399}
   BodyPart: 2

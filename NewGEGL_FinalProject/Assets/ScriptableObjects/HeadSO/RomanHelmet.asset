@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3265b0916d144094aa9dc623900ef629, type: 3}
   m_Name: RomanHelmet
   m_EditorClassIdentifier: 
-  itemIcon: {fileID: 0}
-  itemName: 
-  itemPrefab: []
-  position: {x: 0, y: 0, z: 0}
-  rotation: {x: 0, y: 0, z: 0}
+  itemIcon: {fileID: 21300000, guid: fab6a8f21a5f3c245a7d95656d498cdb, type: 3}
+  itemName: Roman Helmet
+  itemPrefab:
+  - {fileID: 8615695724025749325, guid: 789ab75a9df81a54ea938743324f86ba, type: 3}
+  position: {x: -357.34, y: 15.87, z: 6.12}
+  rotation: {x: 17.906, y: 270, z: 0}
   BodyPart: 0

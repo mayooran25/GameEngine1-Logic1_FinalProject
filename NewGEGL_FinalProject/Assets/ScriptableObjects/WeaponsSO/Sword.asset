@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3265b0916d144094aa9dc623900ef629, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  itemIcon: {fileID: 0}
-  itemName: 
+  itemIcon: {fileID: 21300000, guid: 4f46e0c7df30d254b871ae051477a081, type: 3}
+  itemName: Sword
   itemPrefab: []
-  position: {x: 0, y: 0, z: 0}
-  rotation: {x: 0, y: 0, z: 0}
+  position: {x: -357.132, y: 9.69, z: 10.65}
+  rotation: {x: 0, y: 0, z: 109.762}
   BodyPart: 2

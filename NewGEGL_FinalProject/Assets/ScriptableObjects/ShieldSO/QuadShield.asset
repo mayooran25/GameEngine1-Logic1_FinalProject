@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3265b0916d144094aa9dc623900ef629, type: 3}
   m_Name: QuadShield
   m_EditorClassIdentifier: 
-  itemIcon: {fileID: 0}
-  itemName: 
+  itemIcon: {fileID: 21300000, guid: 1bd959954c393304696c1ad4cdfb9999, type: 3}
+  itemName: Quad Shield
   itemPrefab: []
-  position: {x: 0, y: 0, z: 0}
-  rotation: {x: 0, y: 0, z: 0}
+  position: {x: -371.4948, y: 5.9, z: 2.8}
+  rotation: {x: -23.48, y: 185.091, z: -7.14}
   BodyPart: 1

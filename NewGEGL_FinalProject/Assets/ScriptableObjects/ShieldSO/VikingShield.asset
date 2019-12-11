@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3265b0916d144094aa9dc623900ef629, type: 3}
   m_Name: VikingShield
   m_EditorClassIdentifier: 
-  itemIcon: {fileID: 0}
-  itemName: 
+  itemIcon: {fileID: 21300000, guid: 9d995c28462328d41a1c558eb4885f27, type: 3}
+  itemName: Viking Shield
   itemPrefab: []
-  position: {x: 0, y: 0, z: 0}
-  rotation: {x: 0, y: 0, z: 0}
+  position: {x: -0.109, y: 0.056, z: 0.002}
+  rotation: {x: 0.001, y: -83.50001, z: 0}
   BodyPart: 1

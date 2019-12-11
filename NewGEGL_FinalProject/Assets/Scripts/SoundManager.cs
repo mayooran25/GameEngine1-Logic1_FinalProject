@@ -1,21 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class SoundManager : MonoBehaviour
 {
-    public AudioSource sAudio;
+    //public AudioSource sAudio;
     public static SoundManager instance;
 
-    // Start is called before the first frame update
-    void Start()
+    public AudioMixer mixer;
+    public void SetLevel(float sliderValue)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        mixer.SetFloat("MasterVol", Mathf.Log10( sliderValue) *20);
     }
 }

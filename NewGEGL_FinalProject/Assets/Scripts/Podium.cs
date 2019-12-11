@@ -49,8 +49,15 @@ public class Podium : MonoBehaviour
         }
     }
 
-    public void EquipItem()
+    public void EquipItem(BodyPart part, int inId)
     {
-        //if(player.)
+        foreach (var item in items[part])
+        {
+            if (item.id == inId)
+            {
+                player.GetComponent<PlayerClothes>().EnableItem(part, item.id);
+            }
+        }
+        
     }
 }

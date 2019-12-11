@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.LeftShift) && movementSpeed >= 0.5)
         {
             animator.SetTrigger("walk");
-            movementSpeed = 18f;
+            movementSpeed = 20f;
         }
 
 

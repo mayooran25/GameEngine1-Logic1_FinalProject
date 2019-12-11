@@ -4,20 +4,46 @@ using UnityEngine;
 
 public class PlayerClothes : MonoBehaviour
 {
-    public item body;
-    public item feet;
-    public item hands;
-    public item head;
-    public item weapon;
-    // Start is called before the first frame update
-    void Start()
+    public List<GameObject> heads;
+    public List<GameObject> feets;
+    public List<GameObject> shields;
+    public List<GameObject> weapons;
+
+    public void EnableItem(BodyPart bodyPart, int id)
     {
-        
+        if (bodyPart == BodyPart.Feet)
+        {
+            EquipSequence(feets, id);
+        }
+        else if (bodyPart == BodyPart.Head)
+        {
+            EquipSequence(heads, id);
+
+        }
+        else if (bodyPart == BodyPart.Weapons)
+        {
+            EquipSequence(weapons, id);
+
+        }
+        else if (bodyPart == BodyPart.Shield)
+        {
+            EquipSequence(shields, id);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void EquipSequence(List<GameObject> typeList, int inId)
     {
-        
+        for (int i = 0; i < typeList.Count; i++)
+        {
+            typeList[i].SetActive(false);
+        }
+
+        for (int i = 0; i < typeList.Count; i++)
+        {
+            if (typeList[i].GetComponent<ItemID>().id == inId)
+            {
+                typeList[i].SetActive(true);
+            }
+        }
     }
 }

@@ -27,9 +27,9 @@ public class Podium : MonoBehaviour
 
     void InitializeDictonary()
     {
-        items.Add(BodyPart.Body, new List<ItemSO>());
+        
         items.Add(BodyPart.Feet, new List<ItemSO>());
-        items.Add(BodyPart.Hands, new List<ItemSO>());
+        items.Add(BodyPart.Shield, new List<ItemSO>());
         items.Add(BodyPart.Head, new List<ItemSO>());
         items.Add(BodyPart.Weapons, new List<ItemSO>());
         

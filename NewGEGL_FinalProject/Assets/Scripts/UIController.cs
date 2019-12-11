@@ -10,8 +10,7 @@ public class UIController : MonoBehaviour
     public Transform HeadPanel;
     public Transform FeetPanel;
     public Transform WeaponsPanel;
-    public Transform HandsPanel;
-    public Transform BodyPanel;
+    public Transform ShieldPanel;
  
     public void CreatePanelItem( BodyPart bodypart ,List<ItemSO> items)
     {
@@ -37,21 +36,11 @@ public class UIController : MonoBehaviour
 
            else
 
-            if (bodypart == BodyPart.Hands)
+            if (bodypart == BodyPart.Shield)
             {
                 //Instantiate((GetComponent<item>().itemIcon), HandsPanel);
                 //Instantiate((GetComponent<item>().itemNameText),HandsPanel);
-                GameObject go = Instantiate(menuItemPrefab, HandsPanel);
-                go.GetComponent<item>().Init(item);
-            }
-
-            else
-
-            if (bodypart == BodyPart.Body)
-            {
-                //Instantiate((GetComponent<item>().itemIcon), BodyPanel);
-                //Instantiate((GetComponent<item>().itemNameText), BodyPanel);
-                GameObject go = Instantiate(menuItemPrefab, BodyPanel);
+                GameObject go = Instantiate(menuItemPrefab, ShieldPanel);
                 go.GetComponent<item>().Init(item);
             }
 
@@ -59,11 +48,13 @@ public class UIController : MonoBehaviour
 
             if (bodypart == BodyPart.Weapons)
             {
-                //Instantiate((GetComponent<item>().itemIcon), WeaponsPanel);
-                //Instantiate((GetComponent<item>().itemNameText), WeaponsPanel);
+                //Instantiate((GetComponent<item>().itemIcon), BodyPanel);
+                //Instantiate((GetComponent<item>().itemNameText), BodyPanel);
                 GameObject go = Instantiate(menuItemPrefab, WeaponsPanel);
                 go.GetComponent<item>().Init(item);
             }
+
+            
         }
     }
 

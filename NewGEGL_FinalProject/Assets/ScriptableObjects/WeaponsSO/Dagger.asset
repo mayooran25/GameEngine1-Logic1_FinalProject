@@ -7,14 +7,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3265b0916d144094aa9dc623900ef629, type: 3}
   m_Name: Dagger
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 21300000, guid: 720d9747414bd0d4cb2b4a9566484e59, type: 3}
   itemName: Dagger
-  itemPrefab: []
+  itemPrefab:
+  - {fileID: 1871466532502939097, guid: d243cfd3e5bc416489c807dfbd559fa8, type: 3}
   position: {x: 0.2053616, y: -0.2996783, z: 0.4596878}
   rotation: {x: -60.735, y: 90.00001, z: -108.434}
   BodyPart: 2
+  id: 8

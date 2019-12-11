@@ -7,14 +7,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3265b0916d144094aa9dc623900ef629, type: 3}
   m_Name: QuadShield
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 21300000, guid: 1bd959954c393304696c1ad4cdfb9999, type: 3}
   itemName: Quad Shield
-  itemPrefab: []
+  itemPrefab:
+  - {fileID: 2224514484030236053, guid: 529bc699f12f6744bbfec365f1c10617, type: 3}
   position: {x: -0.5765936, y: -0.3276462, z: 1.132684}
   rotation: {x: -83.108, y: 312.714, z: -47.614}
   BodyPart: 1
+  id: 5

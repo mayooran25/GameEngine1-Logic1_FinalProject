@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Podium : MonoBehaviour
 {
-    public GameObject player;
+    public PlayerClothes player;
     public Transform podiumPosition;
     public Dictionary<BodyPart, List<ItemSO>> items;
     public List<ItemSO> allList;
@@ -41,10 +41,16 @@ public class Podium : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        //player = GameObject.FindGameObjectWithTag("Player");
+        player = FindObjectOfType<PlayerClothes>();
         foreach (var item in items)
         {
             _uiScript.CreatePanelItem(item.Key, item.Value);
         }
+    }
+
+    public void EquipItem()
+    {
+        //if(player.)
     }
 }

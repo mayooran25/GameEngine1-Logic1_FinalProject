@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,8 +21,12 @@ public class ItemSO : ScriptableObject
     public Vector3 position;
     public Vector3 rotation;
     public BodyPart BodyPart;
-          
+    public int id;
 
-
+    private void Awake()
+    {
+        id = itemPrefab[0].GetComponent<ItemID>().id;
+    }
+    
 }
 

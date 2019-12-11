@@ -16,6 +16,6 @@ MonoBehaviour:
   itemName: Spartan Helmet
   itemPrefab:
   - {fileID: 6866315463035600561, guid: 021747dae187d9c499f0f89a7107f9b1, type: 3}
-  position: {x: -358.17, y: 16.96, z: 6.12}
-  rotation: {x: -5.232, y: 270, z: 0}
+  position: {x: 0.006, y: 0.052, z: 0.014}
+  rotation: {x: -5.232, y: 360, z: 0.001}
   BodyPart: 0

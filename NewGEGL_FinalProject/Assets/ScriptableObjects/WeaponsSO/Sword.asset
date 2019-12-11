@@ -15,6 +15,6 @@ MonoBehaviour:
   itemIcon: {fileID: 21300000, guid: 4f46e0c7df30d254b871ae051477a081, type: 3}
   itemName: Sword
   itemPrefab: []
-  position: {x: -357.132, y: 9.69, z: 10.65}
-  rotation: {x: 0, y: 0, z: 109.762}
+  position: {x: 0.1340033, y: 0.0005220974, z: 6711898}
+  rotation: {x: -60.735, y: 90.00001, z: 109.761}
   BodyPart: 2

@@ -15,6 +15,6 @@ MonoBehaviour:
   itemIcon: {fileID: 21300000, guid: e145fe97b3cc3f6418e25b1e2fc993d5, type: 3}
   itemName: Circle Shield
   itemPrefab: []
-  position: {x: -366.8176, y: 7.012683, z: 7.012683}
-  rotation: {x: -20.752, y: 178.73, z: -2.065}
+  position: {x: -0.441, y: 0.025, z: 0.858}
+  rotation: {x: -82.03101, y: 261.404, z: 5.999}
   BodyPart: 1

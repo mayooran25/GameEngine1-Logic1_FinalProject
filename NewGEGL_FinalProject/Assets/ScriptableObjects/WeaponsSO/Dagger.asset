@@ -15,6 +15,6 @@ MonoBehaviour:
   itemIcon: {fileID: 21300000, guid: 720d9747414bd0d4cb2b4a9566484e59, type: 3}
   itemName: Dagger
   itemPrefab: []
-  position: {x: -362.4, y: 7.6, z: 8.38}
-  rotation: {x: 0, y: 0, z: -108.434}
+  position: {x: 0.2053616, y: -0.2996783, z: 0.4596878}
+  rotation: {x: -60.735, y: 90.00001, z: -108.434}
   BodyPart: 2

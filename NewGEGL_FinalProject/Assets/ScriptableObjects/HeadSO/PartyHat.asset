@@ -16,6 +16,6 @@ MonoBehaviour:
   itemName: 'Party Hat '
   itemPrefab:
   - {fileID: 3302717276450450610, guid: 628a349761bec9943b6d6977749750d3, type: 3}
-  position: {x: -358.11, y: 18.06, z: 6.14}
-  rotation: {x: 13.54, y: -15.453, z: -3.703}
+  position: {x: 0.003, y: 0.157, z: 0.03}
+  rotation: {x: 13.538, y: 74.547, z: -3.703}
   BodyPart: 0

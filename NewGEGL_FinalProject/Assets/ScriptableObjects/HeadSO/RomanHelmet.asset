@@ -16,6 +16,6 @@ MonoBehaviour:
   itemName: Roman Helmet
   itemPrefab:
   - {fileID: 8615695724025749325, guid: 789ab75a9df81a54ea938743324f86ba, type: 3}
-  position: {x: -357.34, y: 15.87, z: 6.12}
-  rotation: {x: 17.906, y: 270, z: 0}
+  position: {x: 0.003, y: -0.077, z: -0.055}
+  rotation: {x: 17.906, y: 360, z: 0.001}
   BodyPart: 0

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +8,13 @@ public class PlayerClothes : MonoBehaviour
     public List<GameObject> heads;
     public List<GameObject> shields;
     public List<GameObject> weapons;
+
+    public EndGameCut endScript;
+
+    private void Awake()
+    {
+        endScript = FindObjectOfType<EndGameCut>();
+    }
 
     public void EnableItem(BodyPart bodyPart, int id)
     {
@@ -22,6 +30,7 @@ public class PlayerClothes : MonoBehaviour
                 EquipSequence(shields, id);
                 break;
         }
+        endScript.UpdateItem(id);
     }
 
     void EquipSequence(List<GameObject> typeList, int inId)

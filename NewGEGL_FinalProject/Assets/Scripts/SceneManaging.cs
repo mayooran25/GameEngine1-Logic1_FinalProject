@@ -34,6 +34,8 @@ public class SceneManaging : MonoBehaviour
     public void GamePaused()
     {
         Time.timeScale = 0;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         if(camMove != null)
         {
             camMove.enabled = false;
@@ -43,6 +45,8 @@ public class SceneManaging : MonoBehaviour
     public void GameResumed()
     {
         Time.timeScale = 1;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         if (camMove != null)
         {
             camMove.enabled = true;

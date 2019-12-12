@@ -49,6 +49,8 @@ public class Podium : MonoBehaviour
         {
             _uiScript.CreatePanelItem(item.Key, item.Value);
         }
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void EquipItem(BodyPart part, int inId)
@@ -72,6 +74,8 @@ public class Podium : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     //onIntractEvent.Invoke();
+                    Cursor.visible = true;
+                    Cursor.lockState = CursorLockMode.None;
                     _uiScript.canvas.SetActive(true);
                     _player.GetComponent<PlayerMovement>().enabled = false;
                     _player.GetComponent<PlayerMovement>().cam.enabled = false;
@@ -87,6 +91,8 @@ public class Podium : MonoBehaviour
                 instructionText.text = "Press Esc to Exit";
                 if (Input.GetKeyDown(KeyCode.Escape))
                 {
+                    Cursor.visible = false;
+                    Cursor.lockState = CursorLockMode.Locked;
                     //onExitEvent.Invoke();
                     _uiScript.canvas.SetActive(false);
                     _inMenu = false;

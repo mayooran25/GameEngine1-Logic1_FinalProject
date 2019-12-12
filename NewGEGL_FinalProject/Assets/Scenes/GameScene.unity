@@ -8245,6 +8245,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7624889664282805822, guid: 8733fc61fd50b814a888134ca036901b,
         type: 3}
+      propertyPath: allList.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624889664282805822, guid: 8733fc61fd50b814a888134ca036901b,
+        type: 3}
       propertyPath: instructionText
       value: 
       objectReference: {fileID: 916021996}
@@ -8253,6 +8258,24 @@ PrefabInstance:
       propertyPath: podiumPosition
       value: 
       objectReference: {fileID: 1703094008}
+    - target: {fileID: 7624889664282805822, guid: 8733fc61fd50b814a888134ca036901b,
+        type: 3}
+      propertyPath: allList.Array.data[9]
+      value: 
+      objectReference: {fileID: 11400000, guid: 5012534cba305e0418449b7c64f3ddfc,
+        type: 2}
+    - target: {fileID: 7624889664282805822, guid: 8733fc61fd50b814a888134ca036901b,
+        type: 3}
+      propertyPath: allList.Array.data[10]
+      value: 
+      objectReference: {fileID: 11400000, guid: a0b9d9a9b08805d41a0d1a4daabf87d0,
+        type: 2}
+    - target: {fileID: 7624889664282805822, guid: 8733fc61fd50b814a888134ca036901b,
+        type: 3}
+      propertyPath: allList.Array.data[11]
+      value: 
+      objectReference: {fileID: 11400000, guid: 169c9d1ac919b2741b877bfe9cfad65d,
+        type: 2}
     - target: {fileID: 7624889664282805823, guid: 8733fc61fd50b814a888134ca036901b,
         type: 3}
       propertyPath: HeadPanel
@@ -8472,6 +8495,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624889664282805761, guid: 8733fc61fd50b814a888134ca036901b,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7458272999706888307, guid: 8733fc61fd50b814a888134ca036901b,
         type: 3}

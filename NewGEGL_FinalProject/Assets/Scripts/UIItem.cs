@@ -15,7 +15,7 @@ public class UIItem : MonoBehaviour
     public void Init(ItemSO data)
     {
         this.itemIcon.sprite = data.itemIcon;
-        this.itemNameText.text = data.name;
+        this.itemNameText.text = data.itemName;
         isInitialized = true;
     }
 

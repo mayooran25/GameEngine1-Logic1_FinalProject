@@ -19,3 +19,4 @@ MonoBehaviour:
   rotation: {x: 0, y: 0, z: 0}
   BodyPart: 2
   id: 0
+  itemEndStatement: Only fools don't carry weapons.

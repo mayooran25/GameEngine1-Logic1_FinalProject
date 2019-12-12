@@ -16,15 +16,15 @@ public class EndGameCut : MonoBehaviour
     public ItemSO finalShield;
     public ItemSO finalWeapon;
 
-    TextMeshProUGUI _headText;
-    TextMeshProUGUI _weaponText;
-    TextMeshProUGUI _shieldText;
-    TextMeshProUGUI _EndMissionStatement;
+    public TextMeshProUGUI _headText;
+    public TextMeshProUGUI _weaponText;
+    public TextMeshProUGUI _shieldText;
+    public TextMeshProUGUI _EndMissionStatement;
 
     private void Awake()
     {
         _podium = FindObjectOfType<Podium>();
-        anim = GetComponent<Animator>();
+        //anim = GetComponent<Animator>();
     }
 
 
@@ -33,28 +33,32 @@ public class EndGameCut : MonoBehaviour
         EndStats();
     }
 
-    public void UpdateItem(int inId)
+    public void UpdateItem(BodyPart part,int inId)
     {
         for (int i = 0; i < _podium.allList.Count; i++)
         {
-            if (_podium.allList[i].BodyPart == BodyPart.Head)
+            if (part == BodyPart.Head)
             {
                 if (inId == _podium.allList[i].id)
-                {
+                {            Debug.Log(_podium.allList[i]);
+
                     finalHead = _podium.allList[i];
                 }
             }
-            else if (_podium.allList[i].BodyPart == BodyPart.Shield)
+            else if (part == BodyPart.Shield)
             {
                 if (inId == _podium.allList[i].id)
-                {
+                {            Debug.Log(_podium.allList[i]);
+
                     finalShield = _podium.allList[i];
                 }
             }
-            else if (_podium.allList[i].BodyPart == BodyPart.Weapons)
+            else if (part == BodyPart.Weapons)
             {
                 if (inId == _podium.allList[i].id)
                 {
+                    Debug.Log(_podium.allList[i]);
+
                     finalWeapon = _podium.allList[i];
                 }
             }
@@ -64,13 +68,17 @@ public class EndGameCut : MonoBehaviour
 
     public void EndStats()
     {
+        _podium.DisablePlayer();
+        blackOutPanel.SetActive(true);
         bool hasHead = HasItem(finalHead);
         bool hasShield = HasItem(finalShield);
         bool hasWeapon = HasItem(finalWeapon);
 
-        _headText.text = finalHead.itemName + finalHead.itemEndStatement;
-        _weaponText.text = finalShield.itemName + finalShield.itemEndStatement;
-        _shieldText.text = finalWeapon + finalWeapon.itemEndStatement;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        _headText.text = finalHead.itemName+ " " + finalHead.itemEndStatement;
+        _weaponText.text = finalShield.itemName+ " " + finalShield.itemEndStatement;
+        _shieldText.text = finalWeapon.itemName+ " " + finalWeapon.itemEndStatement;
 
         if (hasHead && hasShield && hasWeapon)
         {

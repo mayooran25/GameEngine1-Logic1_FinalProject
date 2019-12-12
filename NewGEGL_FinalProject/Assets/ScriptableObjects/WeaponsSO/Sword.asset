@@ -20,3 +20,4 @@ MonoBehaviour:
   rotation: {x: -60.735, y: 90.00001, z: 109.761}
   BodyPart: 2
   id: 9
+  itemEndStatement: Its dangerous to go alone, take this!

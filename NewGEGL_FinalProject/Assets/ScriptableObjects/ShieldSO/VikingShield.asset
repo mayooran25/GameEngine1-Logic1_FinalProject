@@ -20,3 +20,4 @@ MonoBehaviour:
   rotation: {x: -0.435, y: 6.485, z: 3.836}
   BodyPart: 1
   id: 6
+  itemEndStatement: Its a little heavy, but you weild the strength!

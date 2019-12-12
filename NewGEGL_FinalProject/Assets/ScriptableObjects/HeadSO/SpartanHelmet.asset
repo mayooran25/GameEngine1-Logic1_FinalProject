@@ -20,3 +20,4 @@ MonoBehaviour:
   rotation: {x: -5.232, y: 360, z: 0.001}
   BodyPart: 0
   id: 3
+  itemEndStatement: One of the 300

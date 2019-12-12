@@ -18,6 +18,7 @@ public class PlayerClothes : MonoBehaviour
 
     public void EnableItem(BodyPart bodyPart, int id)
     {
+        endScript.UpdateItem(bodyPart, id);
         switch (bodyPart)
         {
             case BodyPart.Head:
@@ -30,7 +31,6 @@ public class PlayerClothes : MonoBehaviour
                 EquipSequence(shields, id);
                 break;
         }
-        endScript.UpdateItem(id);
     }
 
     void EquipSequence(List<GameObject> typeList, int inId)

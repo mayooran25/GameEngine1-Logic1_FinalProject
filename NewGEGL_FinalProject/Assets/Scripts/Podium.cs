@@ -77,8 +77,7 @@ public class Podium : MonoBehaviour
                     Cursor.visible = true;
                     Cursor.lockState = CursorLockMode.None;
                     _uiScript.canvas.SetActive(true);
-                    _player.GetComponent<PlayerMovement>().enabled = false;
-                    _player.GetComponent<PlayerMovement>().cam.enabled = false;
+                    DisablePlayer();
                     _player.transform.position = podiumPosition.position;
                     _player.transform.LookAt(Vector3.right);
                     //_player.GetComponent<PlayerMovement>().enabled = false;
@@ -102,6 +101,12 @@ public class Podium : MonoBehaviour
                     _player.GetComponent<PlayerMovement>().cam.enabled = true;                }
             }
         }
+    }
+
+    public void DisablePlayer()
+    {
+        _player.GetComponent<PlayerMovement>().enabled = false;
+        _player.GetComponent<PlayerMovement>().cam.enabled = false;
     }
 
     private void OnTriggerExit(Collider other)

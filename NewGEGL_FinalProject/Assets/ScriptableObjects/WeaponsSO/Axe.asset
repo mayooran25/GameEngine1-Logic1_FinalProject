@@ -20,3 +20,4 @@ MonoBehaviour:
   rotation: {x: -60.735, y: 90.00001, z: 87.399}
   BodyPart: 2
   id: 7
+  itemEndStatement: You only have 1, don't throw it!

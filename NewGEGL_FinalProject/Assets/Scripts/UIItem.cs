@@ -10,11 +10,13 @@ public class UIItem : MonoBehaviour
     public TextMeshProUGUI itemNameText;
     public ItemSO itemData;
     public Podium podium;
+    public bool isInitialized;
 
     public void Init(ItemSO data)
     {
         this.itemIcon.sprite = data.itemIcon;
         this.itemNameText.text = data.name;
+        isInitialized = true;
     }
 
     public void Onclick()

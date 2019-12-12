@@ -5,27 +5,22 @@ using UnityEngine;
 public class PlayerClothes : MonoBehaviour
 {
     public List<GameObject> heads;
-    public List<GameObject> feets;
     public List<GameObject> shields;
     public List<GameObject> weapons;
 
     public void EnableItem(BodyPart bodyPart, int id)
     {
-        if (bodyPart == BodyPart.Feet)
+        switch (bodyPart)
         {
-            EquipSequence(feets, id);
-        }
-        else if (bodyPart == BodyPart.Head)
-        {
-            EquipSequence(heads, id);
-        }
-        else if (bodyPart == BodyPart.Weapons)
-        {
-            EquipSequence(weapons, id);
-        }
-        else if (bodyPart == BodyPart.Shield)
-        {
-            EquipSequence(shields, id);
+            case BodyPart.Head:
+                EquipSequence(heads, id);
+                break;
+            case BodyPart.Weapons:
+                EquipSequence(weapons, id);
+                break;
+            case BodyPart.Shield:
+                EquipSequence(shields, id);
+                break;
         }
     }
 

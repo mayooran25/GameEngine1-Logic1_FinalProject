@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float movementSpeed = 6f;
+    public CameraMovement cam;
     public Vector3 movement = Vector3.zero;
 
     public CharacterController characterController;
@@ -13,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        cam = FindObjectOfType<CameraMovement>();
         animator = GetComponent<Animator>();
         characterController = GetComponent<CharacterController>();
     }

@@ -6,7 +6,7 @@ using UnityEngine;
 [SerializeField]
 public enum BodyPart
 {
-    Head, Shield, Weapons, Feet
+    Head, Shield, Weapons
 }
 
 

@@ -6,7 +6,7 @@ using UnityEngine;
 public class UIController : MonoBehaviour
 {
 
-    public UIItem menuItemPrefab;
+    public GameObject canvas;
     public Transform HeadPanel;
     public Transform WeaponsPanel;
     public Transform ShieldPanel;

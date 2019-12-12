@@ -20,7 +20,7 @@ public class UIController : MonoBehaviour
             {
                 //Instantiate((GetComponent<item>().itemIcon), HeadPanel);
                 //Instantiate((GetComponent<item>().itemNameText), HeadPanel);
-                item go = Instantiate(menuItemPrefab, HeadPanel).GetComponent<item>();
+                UIItem go = Instantiate(menuItemPrefab, HeadPanel).GetComponent<UIItem>();
                 go.itemData = item;
                 go.podium = GetComponent<Podium>();
                 go.Init(item);
@@ -29,10 +29,10 @@ public class UIController : MonoBehaviour
            else
 
             if (bodypart == BodyPart.Feet)
-            { 
+            {
                 //Instantiate((GetComponent<item>().itemIcon),FeetPanel);
                 //Instantiate((GetComponent<item>().itemNameText), FeetPanel);
-                item go = Instantiate(menuItemPrefab, FeetPanel).GetComponent<item>();
+                UIItem go = Instantiate(menuItemPrefab, FeetPanel).GetComponent<UIItem>();
                 go.itemData = item;
                 go.podium = GetComponent<Podium>();
                 go.Init(item);
@@ -44,7 +44,7 @@ public class UIController : MonoBehaviour
             {
                 //Instantiate((GetComponent<item>().itemIcon), HandsPanel);
                 //Instantiate((GetComponent<item>().itemNameText),HandsPanel);
-                item go = Instantiate(menuItemPrefab, ShieldPanel).GetComponent<item>();
+                UIItem go = Instantiate(menuItemPrefab, ShieldPanel).GetComponent<UIItem>();
                 go.itemData = item;
                 go.podium = GetComponent<Podium>();
                 go.Init(item);
@@ -56,7 +56,7 @@ public class UIController : MonoBehaviour
             {
                 //Instantiate((GetComponent<item>().itemIcon), BodyPanel);
                 //Instantiate((GetComponent<item>().itemNameText), BodyPanel);
-                item go = Instantiate(menuItemPrefab, WeaponsPanel).GetComponent<item>();
+                UIItem go = Instantiate(menuItemPrefab, WeaponsPanel).GetComponent<UIItem>();
                 go.itemData = item;
                 go.podium = GetComponent<Podium>();
                 go.Init(item);

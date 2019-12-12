@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UIItem : MonoBehaviour
 {
     public Image itemIcon;
-    public Text itemNameText;
+    public TextMeshProUGUI itemNameText;
     public ItemSO itemData;
     public Podium podium;
 

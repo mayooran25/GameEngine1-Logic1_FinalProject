@@ -154,7 +154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d161eb5f13c76684b9543a8141901c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   podiumPosition: {fileID: 0}
   allList:
   - {fileID: 11400000, guid: c87bd3deb25f4464cb7d9d910dd70b51, type: 2}
@@ -166,6 +165,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2a9654b6d0a7dea428067c4adc39eb96, type: 2}
   - {fileID: 11400000, guid: 99f75cc96344cc44890cb2a4da27fa5e, type: 2}
   - {fileID: 11400000, guid: 7f37b6303d8e0f1499331c0e00d32a8b, type: 2}
+  instructionText: {fileID: 0}
 --- !u!114 &7624889664282805823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,9 +178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6c0bfb7990984f4b83952dc22bd9753, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuItemPrefab: {fileID: 0}
+  canvas: {fileID: 0}
   HeadPanel: {fileID: 0}
-  FeetPanel: {fileID: 0}
   WeaponsPanel: {fileID: 0}
   ShieldPanel: {fileID: 0}
 --- !u!1 &7624889664526851728

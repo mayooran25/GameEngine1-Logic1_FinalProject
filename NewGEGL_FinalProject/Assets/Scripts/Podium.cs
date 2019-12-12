@@ -11,11 +11,12 @@ public class Podium : MonoBehaviour
     public Transform podiumPosition;
     public Dictionary<BodyPart, List<ItemSO>> items;
     public List<ItemSO> allList;
-    
+
     private UIController _uiScript;
-    
+
     private bool _inMenu = false;
     public TextMeshProUGUI instructionText;
+
     private void Awake()
     {
         InitializeDictonary();
@@ -24,7 +25,7 @@ public class Podium : MonoBehaviour
 
     void InitializeDictonary()
     {
-        
+
         //items.Add(BodyPart.Feet, new List<ItemSO>());
         items = new Dictionary<BodyPart, List<ItemSO>>()
         {
@@ -32,13 +33,13 @@ public class Podium : MonoBehaviour
             {BodyPart.Head, new List<ItemSO>()},
             {BodyPart.Weapons, new List<ItemSO>()},
         };
-    
+
         foreach (var item in allList)
         {
             items[item.BodyPart].Add(item);
         }
     }
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,15 +66,17 @@ public class Podium : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (!_inMenu )
+            if (!_inMenu)
             {
                 instructionText.text = "Press E to Customize";
-                if(Input.GetKeyDown(KeyCode.E))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     //onIntractEvent.Invoke();
                     _uiScript.canvas.SetActive(true);
                     _player.GetComponent<PlayerMovement>().enabled = false;
                     _player.GetComponent<PlayerMovement>().cam.enabled = false;
+                    _player.transform.position = podiumPosition.position;
+                    _player.transform.LookAt(Vector3.right);
                     //_player.GetComponent<PlayerMovement>().enabled = false;
                     other.GetComponent<Animator>().SetBool("podium", true);
                     _inMenu = true;
@@ -86,12 +89,11 @@ public class Podium : MonoBehaviour
                 {
                     //onExitEvent.Invoke();
                     _uiScript.canvas.SetActive(false);
-                    _player.GetComponent<PlayerMovement>().enabled = true;
-                    _player.GetComponent<PlayerMovement>().cam.enabled = true;
-
                     _inMenu = false;
+                    //_player.transform.position = new Vector3(_player.transform.position.x, 83.24f, _player.transform.position.y);
                     other.GetComponent<Animator>().SetBool("podium", false);
-                }
+                    _player.GetComponent<PlayerMovement>().enabled = true;
+                    _player.GetComponent<PlayerMovement>().cam.enabled = true;                }
             }
         }
     }

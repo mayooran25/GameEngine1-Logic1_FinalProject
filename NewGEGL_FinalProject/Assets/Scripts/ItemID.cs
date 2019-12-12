@@ -5,9 +5,4 @@ using UnityEngine;
 public class ItemID : MonoBehaviour
 {
     public int id;
-
-    private void Awake()
-    {
-        
-    }
 }

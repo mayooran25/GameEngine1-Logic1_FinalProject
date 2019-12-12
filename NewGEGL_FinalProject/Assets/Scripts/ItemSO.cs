@@ -22,6 +22,7 @@ public class ItemSO : ScriptableObject
     public Vector3 rotation;
     public BodyPart BodyPart;
     public int id;
+    public String itemEndStatement;
 
     private void Awake()
     {

@@ -25,8 +25,8 @@ public class ItemSO : ScriptableObject
 
     private void Awake()
     {
-        itemPrefab[0].GetComponent<ItemID>().id = id;
-        Debug.Log("id Changed");
+        //itemPrefab[0].GetComponent<ItemID>().id = id;
+        //Debug.Log("id Changed");
     }
     
 }

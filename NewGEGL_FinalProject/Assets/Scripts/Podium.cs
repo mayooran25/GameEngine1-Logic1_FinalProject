@@ -28,11 +28,17 @@ public class Podium : MonoBehaviour
     void InitializeDictonary()
     {
         
-        items.Add(BodyPart.Feet, new List<ItemSO>());
-        items.Add(BodyPart.Shield, new List<ItemSO>());
-        items.Add(BodyPart.Head, new List<ItemSO>());
-        items.Add(BodyPart.Weapons, new List<ItemSO>());
-        
+        //items.Add(BodyPart.Feet, new List<ItemSO>());
+        items = new Dictionary<BodyPart, List<ItemSO>>()
+        {
+            {BodyPart.Shield, new List<ItemSO>()},
+            {BodyPart.Head, new List<ItemSO>()},
+            {BodyPart.Weapons, new List<ItemSO>()},
+        };
+//        items.Add(BodyPart.Shield, new List<ItemSO>());
+//        items.Add(BodyPart.Head, new List<ItemSO>());
+//        items.Add(BodyPart.Weapons, new List<ItemSO>());
+//        
         foreach (var item in allList)
         {
             items[item.BodyPart].Add(item);

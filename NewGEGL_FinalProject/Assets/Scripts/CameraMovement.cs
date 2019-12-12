@@ -26,7 +26,7 @@ public class CameraMovement : MonoBehaviour
 
       //  mouseLook.y = Mathf.Clamp(mouseLook.y, -25, -25); //up and down
        //mouseLook.x = Mathf.Clamp(mouseLook.x, -360, 360); //left and right
-       
+
     }
 
     private void OnEnable()
